@@ -8,18 +8,22 @@ import '../../styles/utils/_mixins.scss'
 export const Header: React.FC = () => {
   return (
     <header className='header'>
-      <div className='header__nav'>
-        <a href='/' className='logo'>
-          <img className='logo__image' src={LogoSvg} alt='Logo test assignment' />
-        </a>
+      <div className='container-white'>
+        <div className='container'>
+          <nav className='header__nav'>
+            <a href='/' className='header__logo'>
+              <img className='header__logo-img' src={LogoSvg} alt='Logo test assignment' />
+            </a>
 
-        <div className='header__actions'>
-          <Button type='button-yellow' name='Users' />
-          <Button type='button-yellow' name='Sign up' />
+            <div className='header__actions'>
+              <Button type='yellow' size='small' name='Users' />
+              <Button type='yellow' size='small' name='Sign up' />
+            </div>
+          </nav>
         </div>
-      </div>
 
-      <div className='header__block'>
+      </div>
+      <div className='header__background'>
         <div className='header__content'>
           <h1 className='header__title'>
             Test assignment for front-end developer
@@ -29,7 +33,7 @@ export const Header: React.FC = () => {
             What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they&apos;ll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.
           </p>
 
-          <Button type='button-yellow' name='Sign up' />
+          <Button type='yellow' size='small' name='Sign up' />
         </div>
       </div>
     </header>

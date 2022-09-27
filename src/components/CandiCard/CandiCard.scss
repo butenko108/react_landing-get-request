@@ -1,0 +1,62 @@
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1170px) {
+    @content;
+  }
+}
+
+.candidate {
+  flex-shrink: 0;
+  height: 254px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+
+  @include onTablet {
+    width: 344px;
+  }
+
+  @include onLaptop() {
+    width: 282px;
+  }
+
+  @include onDesktop() {
+    width: 370px;
+  }
+
+  &__img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+}
+
+.text-cut {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

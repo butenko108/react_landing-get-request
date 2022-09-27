@@ -1,30 +1,42 @@
 $primary-color: #F4E041;
 $hover-color: #FFE302;
 
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
 button {
+  border: 0;
+  margin: 13px 0;
+  padding: 0;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   border-radius: 80px;
   line-height: 26px;
-  border: 0;
-  padding: 0;
-  height: 34px;
-  width: 100px;
+}
+
+.yellow {
   background: $primary-color;
   color: rgba(0, 0, 0, 0.87);
-  
-  &-yellow {
-    transition: 0.3s; 
-    
-    &:hover {
-      background: $hover-color;
-    }
-  }
+  @include hover('background', $hover-color);
+}
 
-  &-grey {
-    background: #B4B4B4;
-    color: rgba(255, 255, 255, 0.87);
-  }
+.grey {
+  background: #B4B4B4;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.small {
+  height: 34px;
+  width: 100px;
+}
+
+.big {
+  height: 34px;
+  width: 120px;
 }
