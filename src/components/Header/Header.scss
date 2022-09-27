@@ -1,0 +1,90 @@
+.header {
+  &__nav {
+    height: 60px;
+    box-sizing: border-box;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      padding: 13px 32px;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 13px 60px;
+    }
+
+    @media (min-width: 1170px) {
+      max-width: 1170px;
+      padding: 13px 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__block {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/pexels-alexandr-podvalny-1227513.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 328px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      max-width: 380px;
+    }
+  }
+
+  &__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    margin-bottom: 21px;
+
+    @media (min-width: 768px) {
+      padding-top: 89px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-top: 164px;
+    }
+  }
+
+  &__description {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+}
+
+.logo {
+  line-height: 0;
+
+  &__img {
+    height: 26px;
+    width: 104px;
+  }
+}
