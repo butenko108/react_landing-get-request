@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../Button'
+import { CustomButton } from '../Button'
 import { CandiCard } from '../CandiCard'
 import './Candidates.scss'
 
@@ -18,7 +18,9 @@ export const Candidates: React.FC = () => {
           <CandiCard />
           <CandiCard />
         </div>
-        <Button type='yellow' size='big' name='Show more' />
+        <div className='section__button'>
+          <CustomButton type='yellow' size='big' name='Show more' />
+        </div>
       </section>
     </div>
   )

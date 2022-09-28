@@ -7,7 +7,7 @@ interface Props {
   name: string
 }
 
-export const Button: React.FC<Props> = ({
+export const CustomButton: React.FC<Props> = ({
   type,
   size,
   name

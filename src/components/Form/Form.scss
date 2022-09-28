@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  // justify-content: ;
+  // align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 50px;
+
+  &__element {
+    max-width: 380px;
+  }
+}
+
+.expert {
+  display: flex;
+}

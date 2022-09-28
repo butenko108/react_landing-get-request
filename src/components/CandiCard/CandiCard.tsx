@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import CoverImg from '../../images/photo-cover.svg'
 import './CandiCard.scss'

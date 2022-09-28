@@ -17,6 +17,10 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -38,14 +42,42 @@
   }
 
   &__background {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/pexels-alexandr-podvalny-1227513.jpeg);
-    background-position: bottom;
+    flex-grow: 1;
+    background: url(../../images/first-page-mob.png);
     background-size: cover;
-    height: 100vh;
+    background-image: no-repeat;
     display: flex;
     justify-content: center;
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 71px;
+
+    @include onTablet {
+      background: url(../../images/first-page-tablet.png);
+      background-position: center;
+      background-size: cover;
+      background-image: no-repeat;
+      padding-top: 89px;
+      padding-bottom: 88px;
+    }
+
+    @include onLaptop {
+      background: url(../../images/first-page-laptop.png);
+      background-size: cover;
+      background-position: center;
+      background-image: no-repeat;
+      padding-top: 164px;
+      padding-bottom: 163px;
+    }
+
+    @include onDesktop {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/pexels-alexandr-podvalny-1227513.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-image: no-repeat;
+    }
   }
 
   &__content {
@@ -67,16 +99,7 @@
     line-height: 40px;
     text-align: center;
     color: #fff;
-    padding-top: 40px;
     margin-bottom: 21px;
-
-    @include onTablet {
-      padding-top: 89px;
-    }
-
-    @include onLaptop {
-      padding-top: 164px;
-    }
   }
 
   &__description {
