@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/react_landing-get-request/static/css/main.385fc1eb.css",
-    "main.js": "/react_landing-get-request/static/js/main.a17c99f6.js",
+    "main.css": "/react_landing-get-request/static/css/main.3186e31f.css",
+    "main.js": "/react_landing-get-request/static/js/main.f02152c8.js",
     "static/media/pexels-alexandr-podvalny-1227513.jpeg": "/react_landing-get-request/static/media/pexels-alexandr-podvalny-1227513.be7665f876bbd9138501.jpeg",
     "static/media/first-page-laptop.png": "/react_landing-get-request/static/media/first-page-laptop.337762fabcfb75abc4e9.png",
     "static/media/first-page-tablet.png": "/react_landing-get-request/static/media/first-page-tablet.9d2112ce543ea7a65cbf.png",
     "static/media/first-page-mob.png": "/react_landing-get-request/static/media/first-page-mob.ffb174b377a296139444.png",
     "static/media/Logo.svg": "/react_landing-get-request/static/media/Logo.8bb55362d01d55393ccc5476d96f0c14.svg",
-    "static/media/photo-cover.svg": "/react_landing-get-request/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
     "index.html": "/react_landing-get-request/index.html",
-    "main.385fc1eb.css.map": "/react_landing-get-request/static/css/main.385fc1eb.css.map",
-    "main.a17c99f6.js.map": "/react_landing-get-request/static/js/main.a17c99f6.js.map"
+    "main.3186e31f.css.map": "/react_landing-get-request/static/css/main.3186e31f.css.map",
+    "main.f02152c8.js.map": "/react_landing-get-request/static/js/main.f02152c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.385fc1eb.css",
-    "static/js/main.a17c99f6.js"
+    "static/css/main.3186e31f.css",
+    "static/js/main.f02152c8.js"
   ]
 }
